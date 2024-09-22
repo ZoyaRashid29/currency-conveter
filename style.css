@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(55, 55, 88);
+}
+
+.container {
+    background-color: #F2F2F2;
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 45vh;
+    width: 40vh;
+    margin:3rem;
+}
+
+form {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+form select,button,input{
+    width:100%;
+    border:none;
+    outline:none;
+    border-radius:0.75rem;
+}
+form input{
+    border:1px solid rgb(77, 76, 76);
+    font-size:1rem;
+    height:2rem;
+    padding:0.5rem;
+}
+.dropdown{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top: 2rem;
+}
+img
+{
+    max-width:2rem;
+}
+.dropdown i{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.select-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:6rem;
+    border:1px solid rgb(77, 76, 76);
+    border-radius:0.75rem;
+}
+
+.select-container select{
+    width:auto;
+    font-size: 1rem;
+}
+.msg
+{
+    margin:2rem 0 2rem 0;
+}
+.get-exchange{
+
+    font-size: 1.15rem;
+    height:3rem;
+    background-color: rgb(57, 43, 114);
+    color:white;
+    border:1px solid rgb(77, 76, 76);
+    cursor:pointer;
+}
+.reset-exchange{
+    margin-top:1rem;
+    font-size: 1.15rem;
+    height:3rem;
+    background-color: rgb(57, 43, 114);
+    color:white;
+    border:1px solid rgb(77, 76, 76);
+    cursor:pointer;
+}
+#theme-toggle
+{
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+    font-size:2rem;
+}
+/* Default (Light Theme) */
+:root {
+    --background-color: #6c91c9;
+    --text-color: black;
+    --button-bg-color: rgb(57, 43, 114);
+    --button-text-color: white;
+    --input-border-color: rgb(77, 76, 76);
+    --container-bg-color: #F2F2F2;
+    --get-exchange-bg-color:rgb(57, 43, 114);
+    --reset-exchange-bg-color:rgb(57, 43, 114);
+
+}
+
+/* Dark Theme */
+body.dark-theme {
+    --background-color: #333;
+    --container-bg-color: #444; 
+    --text-color: #f2f2f2;
+    --button-bg-color: #0f0f0f;
+    --button-text-color: #f2f2f2;
+    --input-border-color: #888;
+    --get-exchange-bg-color:rgb(0, 0, 0);
+    --reset-exchange-bg-color:rgb(0, 0, 0);
+}
+
+/* Apply theme variables */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    background-color: var(--container-bg-color); /* Apply container color */
+    color: var(--text-color);
+}
+
+button, input, select {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: 1px solid var(--input-border-color);
+}
+.get-exchange
+{
+    background-color:var(--get-exchange-bg-color);
+}
+.reset-exchange
+{
+    background-color:var(--reset-exchange-bg-color);
+}
+
+button:hover {
+    opacity: 0.9;
+}
